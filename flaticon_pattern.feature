@@ -5,7 +5,7 @@ Feature: Generate patterns from icons
     Then The icon pack page opens
   Scenario: Open create pattern window in same tab
     Given I'm on icon pack page
-    When I change the button's target attribute
+    When I change the button's target attribute on "_blank"
     And Click on it
     Then Page for creating patterns is opened in same tab
   Scenario: Generate 10 patterns and take screenshots

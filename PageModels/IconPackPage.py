@@ -1,3 +1,5 @@
+import time
+
 class IconPackPage:
     def __init__(self, driver):
         self.driver = driver
@@ -10,3 +12,4 @@ class IconPackPage:
 
     def change_target_on(self, value, target):
         self.driver.execute_script('arguments[0].setAttribute("target", ' + target + ')', value)
+        time.sleep(5)
